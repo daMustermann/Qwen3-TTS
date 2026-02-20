@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Models (large, downloaded at install time)
+models/*.bin
+models/*.safetensors
+models/*.pt
+models/Qwen*/
+models/hub/
+
+# User data (private per install)
+voices/*.pt
+voices/*.json
+voices/*.wav
+!voices/.gitkeep
+output/*
+!output/.gitkeep
+config.json
+
+# Runtime
+.server.pid
+server.log
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
